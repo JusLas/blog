@@ -17,14 +17,18 @@ Aplikacja blog.
 
     `pip install -r requirements.txt`
 
+3. Inicjalizacja zmiennych środowiskowych
+
+    `set FLASK_APP=blog`
+
 4. Inicjalizacja bazy danych
 
     `flask db init`
 
-4. Wykonanie migracji
+5. Wykonanie migracji
 
     `flask db upgrade`
 
-4. Uruchomienie serwera lokalnego
+6. Uruchomienie serwera lokalnego
 
     `flask run`
