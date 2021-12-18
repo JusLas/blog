@@ -39,5 +39,5 @@ Aplikacja blog.
 
 2. Zadanie: chwalimy się projektem!:
 
-    1. [Commit](https://github.com/JusLas/blog/commit/04339bcf2d4bb2afd4097e10fca7147643348c1c)
+    1. [Commit](https://github.com/JusLas/blog/commit/053bca0b72555ead4f5b329a3fab3884ad06476f)
     2. [Opublikowana aplikacja](https://jmlaszuk-blog.herokuapp.com/)
