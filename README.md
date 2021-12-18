@@ -36,3 +36,8 @@ Aplikacja blog.
 ### Zadania
 
 1. [Zadanie: refactoring](https://github.com/JusLas/blog/commit/ef2798b22db883223fd3129400a0e6712d2cde36)
+
+2. Zadanie: chwalimy się projektem!:
+
+    1. [Commit](https://github.com/JusLas/blog/commit/04339bcf2d4bb2afd4097e10fca7147643348c1c)
+    2. [Opublikowana aplikacja](https://jmlaszuk-blog.herokuapp.com/)
