@@ -9,6 +9,7 @@ Flask==2.0.2
 Flask-Migrate==3.1.0
 flask-shell-ipython==0.4.1
 Flask-SQLAlchemy==2.5.1
+Flask-WTF==0.14.3
 greenlet==1.1.2
 importlib-metadata==4.8.2
 importlib-resources==5.4.0
@@ -33,4 +34,5 @@ traitlets==5.1.1
 typing-extensions==4.0.1
 wcwidth==0.2.5
 Werkzeug==2.0.2
+WTForms==3.0.0
 zipp==3.6.0
