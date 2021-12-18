@@ -46,6 +46,14 @@ def index():
     return render_template("homepage.html", all_posts=all_posts)
 
 
+@app.route("/drafts/", methods=['GET'])
+@login_required
+def list_drafts():
+    drafts = Entry.query.filter_by(
+        is_published=False).order_by(Entry.pub_date.desc())
+    return render_template("drafts.html", drafts=drafts)
+
+
 @app.route("/new-post/", methods=["GET", "POST"])
 @login_required
 def create_entry():
@@ -57,6 +65,16 @@ def create_entry():
 def edit_entry(entry_id):
     entry = Entry.query.filter_by(id=entry_id).first_or_404()
     return create_or_update(entry)
+
+
+@app.route("/delete-post/<int:entry_id>", methods=["POST"])
+@login_required
+def delete_entry(entry_id):
+    entry = Entry.query.filter_by(id=entry_id).first_or_404()
+    db.session.delete(entry)
+    db.session.commit()
+    flash(f'Usunięto wpis o tytule "{entry.title}"')
+    return redirect(url_for('index'))
 
 
 def create_or_update(entry=None):

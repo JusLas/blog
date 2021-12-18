@@ -30,8 +30,11 @@
 
    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
      <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/new-post/">Dodaj wpis</span></a>
+      <li class="nav-item {% if url_for(request.endpoint) == url_for('list_drafts') %} active {% endif %}">
+        <a class="nav-link" href="/drafts/">Szkice</span></a>
+      </li>
+      <li class="nav-item {% if url_for(request.endpoint) == url_for('create_entry') %} active {% endif %}">
+        <a class="nav-link" href="/new-post/">Nowy wpis</span></a>
       </li>
      </ul>
      {% if session.logged_in %}

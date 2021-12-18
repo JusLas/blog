@@ -32,3 +32,7 @@ Aplikacja blog.
 6. Uruchomienie serwera lokalnego
 
     `flask run`
+
+### Zadania
+
+1. [Zadanie: refactoring](https://github.com/JusLas/blog/commit/ef2798b22db883223fd3129400a0e6712d2cde36)
