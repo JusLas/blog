@@ -2,7 +2,11 @@
 
 {% block content %}
 <h3>
-   Dodaj nowy wpis
+    {% if is_create %}
+    Dodaj nowy wpis
+    {% else %}
+    Edytuj wpis
+    {% endif %}
 </h3>
 
 <form action="" method="POST">
